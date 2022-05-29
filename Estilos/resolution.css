@@ -1,0 +1,32 @@
+@media (max-width: 700px){
+
+    .header{
+        background-color: rgba(132, 43, 148,0.5)
+    }
+    .header nav{
+        flex-direction: column;
+        
+        
+    }
+
+    .lista li{
+        padding: 0 10px;
+        border: solid 2px blueviolet;
+
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .lista{
+        display: block;
+        text-align: center;
+        
+
+
+
+    }
+
+}
+
