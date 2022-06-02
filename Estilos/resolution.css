@@ -66,7 +66,7 @@
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 420px){
 
     .header{
         background-color: rgba(132, 43, 148,0.5)
@@ -97,9 +97,12 @@
     }
 
     .btn{
-        position: absolute;
+        padding: 10px 40px;
+        position: relative;
+        right: 10%;
         display: flex;
         justify-content: center;
+        margin-right: 80%;
     }
 
     .hero img
@@ -113,22 +116,29 @@
 }
 
 .content{
-    min-height: 300px ;
+    min-height: 370px ;
+    
 }
 
 .content .text{
    text-align: center;
    width: 100%;
+   
+   
 }
 
 .elements{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
 }
 
 .project-card{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+}
+
+input{
+    width: 300px;
 }
 }
 
