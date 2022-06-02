@@ -1,3 +1,4 @@
+/* responsive de la barra de nav */
 @media (max-width: 700px){
 
     .header{
@@ -24,7 +25,116 @@
         text-align: center;
     }
 
-    
+    h1{
+        text-align: center;
+    }
 
+    .btn{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero img
+{
+    background-position: center;
+    background-size: cover;
 }
+
+.img-content{
+    display: none;
+}
+
+.content{
+    min-height: 300px ;
+}
+
+.content .text{
+   text-align: center;
+   width: 100%;
+}
+
+.elements{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+@media screen and (max-width: 800px){
+
+    .header{
+        background-color: rgba(132, 43, 148,0.5)
+    }
+    .header nav{
+        flex-direction: column;
+        
+        
+    }
+
+    .lista li{
+        padding: 0 10px;
+        border: solid 2px blueviolet;
+
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .lista{
+        display: block;
+        text-align: center;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .btn{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero img
+{
+    background-position: center;
+    background-size: cover;
+}
+
+.img-content{
+    display: none;
+}
+
+.content{
+    min-height: 300px ;
+}
+
+.content .text{
+   text-align: center;
+   width: 100%;
+}
+
+.elements{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+
+
+
+
 
