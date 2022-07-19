@@ -30,12 +30,14 @@
     <header class="header">
       <nav class="nav">
         <p class="logo"><a href="index.html">Alex Escaño</a></p>
+
         <ul class="lista">
             <li><a href="#">Home</a></li>
             <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#">Projets</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contactA">Contact</a></li>
+
         </ul>
             
   
@@ -47,8 +49,8 @@
             
             <div class="hero">
               <div class="content-hero">
-                <h1 class="titulo">I am Alexander, I'm a <span id="title"> web Developer</span></h1>
-                <button class="btn">Download CV</button>
+                <h1 class="titulo">I am Alexander, I'm a <span id="title"> Software Engineer</span></h1>
+                <a href="CV/Genesis alexander.pdf" target="_blank"><button class="btn">Download CV</button></a>
               </div>
             </div>
                
@@ -58,9 +60,29 @@
                <div class="card">
                 <h3 class="text-content" id="aboutme">About Me</h3>
                 
-                   <img src="/imagenes/content.png" alt="" class="img-content">
+                   
                    <div class="text">
-                        <p>Mi nombre es Alexander estudiante de <strong>ingenieria en Software</strong>. Aficionado de la tecnologia y inteligencia artificial, con deseos de seguir aprendiendo y expandiendo mas mis conocimientos. </p>
+                        <p>Mi nombre es Alexander estudiante de <strong>ingenieria de Software</strong>. Aficionado de la tecnologia y inteligencia artificial, con deseos de seguir aprendiendo y expandiendo mas mis conocimientos.</p>
+
+                <!--         <div class="aptitudesHabiliades">
+                            <div class="aptitudes">
+                            <h5>Aptitudes</h5>
+                            <li>Pensamiento Analitico</li>
+                            <li>Pensamiento logico</li>
+                            <li>Trabajo en equipò</li>
+                            <li>Dispuesto a Aprender</li>
+                        </div>
+                        </div>
+                        <div class="aptitudesHabiliades">
+                            <div class="habilidades">
+                             <h5>Aptitudes</h5>
+                            <li>Pensamiento Analitico</li>
+                            <li>Pensamiento logico</li>
+                            <li>Trabajo en equipò</li>
+                            <li>Dispuesto a Aprender</li>
+                            </div>
+                            
+                        </div> -->
                     </div>
                </div>
 
@@ -69,23 +91,23 @@
             <div class="skills">
                  <h3 class="text-content" id="skills">Skills</h3>
               <div class="elements">
-                  <a href="">
+                  <a>
                       <img src="Imagenes/html.png" alt="" class="skill1 html">
                   </a>
 
-                  <a href="">
+                  <a >
                     <img src="Imagenes/css.png" alt="" class="skill1 css">
                  </a>
 
-                <a href="">
+                <a >
                     <img src="Imagenes/js.png" alt="" class="skill1 js">
                 </a>
 
-                <a href="">
+                <a >
                     <img src="Imagenes/NODE.png" alt="" class="skill1 js">
                 </a>
 
-                <a href="">
+                <a >
                     <img src="Imagenes/JAVA.png" alt="" class="skill1 js">
                 </a>
               </div>
@@ -94,79 +116,61 @@
               
             </div>
 
-            <div class="project">
+            <div class="project" id="projects">
                <h3 class="text-content">Projects</h3>
-               <div class="project-card">
-               <div>
-                   <img src="Imagenes/Paginas-web.jpg" alt="">
+               <div class="project-card" >
+                
+               <a href="https://alexescano.github.io/Netflix-Login-Clon/" target="_blank">
+
+                  <div>
                    
-                </div>
+                   <p class="text-hover">Clon Login Netflix</p>
+                   
+                   <img src="Imagenes/Login-netflix-clon.png" alt="">
+                   
+                  </div>
+               </a>
 
+
+                 <a href="https://alexescano.github.io/TechNews/" target="_blank">
+                
                <div>
-                <img src="Imagenes/Paginas-web.jpg" alt="">
-                
-            </div>
+              
 
-            <div>
-                <img src="Imagenes/Paginas-web.jpg" alt="">
+                <p class="text-hover">TechNews</p>
+                <img src="Imagenes/technews.png" alt="">
                 
             </div>
-
-            <div>
-                <img src="Imagenes/Paginas-web.jpg" alt="">
-                
-            </div>
-
-            <div>
-                <img src="Imagenes/Paginas-web.jpg" alt="">
-                
-            </div>
-
-            <div>
-                <img src="Imagenes/Paginas-web.jpg" alt="">
-                
-            </div>
-
-            <div>
-                <img src="Imagenes/Paginas-web.jpg" alt="">
-                
-            </div>
-
-            <div>
-                <img src="Imagenes/Paginas-web.jpg" alt="">
-                
-            </div>
+            </a>
         </div>
             </div>
 
             <div class="contact">
                 <h3>Contact Me!!</h3>
-                <div class="content-contact">
-                    <form action="">
-                    <label for=""> Nombre
-                        <input type="text" name="Nombre" id="nombre"required>
-                    </label>
-                    <label for=""> Correo Electronico
-                        <input type="email" name="email"  id="correo" required>
-                    </label>
-                    <label for=""> Comentario
-                        <textarea></textarea>
-                    </label>
-                    <div class="btn-form">
-                        <a href="" class="btn-form" type="submit">Enviar</a>
-                    </div>
                 
-                    <div class="icons">
+                <form action="https://formspree.io/f/xzbowepy" method="POST">
+                    
+                    <div class="content-contact" id="contactA">
+                    
+                        <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required>
+                    
+                    
+                        <input type="email" name="email"  id="correo" placeholder="Correo Electronico:" required>
+                    
+                    
+                        <textarea name="message" placeholder="Comentario:"></textarea>
+                    
+                    
+                        <button class="btn-form btn-form" type="submit">Enviar</button>
+                    </div>
+                     <div class="icons">
                       <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                       <a href=""><i class="fa-brands fa-linkedin"></i></a>
                       <a href=""><i class="fa-brands fa-github"></i></a>
                     </div>
-
-                    
-                </div>
-            </form>
+                </form>
+                   
                 
-
             </div>
     </main>
     <script src="main.js"></script>

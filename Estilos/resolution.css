@@ -1,18 +1,28 @@
 /* responsive de la barra de nav */
-@media (max-width: 700px){
+@media (max-width:  1280px){
 
+    .content-contact{
+        padding: 10px;
+    }
+
+}
+@media (max-width:  830px){
     .header{
-        background-color: rgba(132, 43, 148,0.5)
+        background-color: var(--Color-Prymari)
+
+        
     }
     .header nav{
         flex-direction: column;
+
+
         
         
     }
 
     .lista li{
         padding: 0 10px;
-        border: solid 2px blueviolet;
+        border: solid 2px #fff;
 
     }
 
@@ -23,6 +33,7 @@
     .lista{
         display: block;
         text-align: center;
+        
     }
 
     h1{
@@ -63,13 +74,84 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
 }
+@media (max-width: 700px){
+
+    .header{
+        background-color: var(--Color-Prymari)
+
+        
+    }
+    .header nav{
+        flex-direction: column;
+
+
+        
+        
+    }
+
+    .lista li{
+        padding: 0 10px;
+        border: solid 2px #fff;
+
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .lista{
+        display: block;
+        text-align: center;
+        
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .btn{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero img
+{
+    background-position: center;
+    background-size: cover;
+}
+
+.img-content{
+    display: none;
+}
+
+.content{
+    min-height: 300px ;
+}
+
+.content .text{
+   text-align: center;
+   width: 100%;
+}
+
+.elements{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 
 
 @media screen and (max-width: 420px){
 
     .header{
-        background-color: rgba(132, 43, 148,0.5)
+        background-color: var(--Color-Prymari);
     }
     .header nav{
         flex-direction: column;
@@ -79,7 +161,7 @@
 
     .lista li{
         padding: 0 10px;
-        border: solid 2px blueviolet;
+        border: solid 2px #fff;
 
     }
 
@@ -125,6 +207,7 @@
    width: 100%;
    
    
+   
 }
 
 .elements{
@@ -137,7 +220,16 @@
     grid-template-columns: 1fr;
 }
 
+.content-contact{
+    padding: 15px;
+}
+
 input{
+    width: 300px;
+
+}
+
+textarea{
     width: 300px;
 }
 }

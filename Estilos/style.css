@@ -1,8 +1,28 @@
+ /*variables*/
+
+ :root{
+    --Color-Prymari: rgba(64, 207, 255,0.8) ;
+ }
+
+/*-------------------------------------------------------------*/
  html, body {
     width: 100%!important;
     overflow-x: hidden!important;
 } 
 
+::placeholder{
+    padding: 0 20px;
+    font-size: 20px;
+
+}
+
+textarea::placeholder{
+    padding: 20px 20px;
+    font-size: 20px;
+    font-family: inherit;
+}
+
+/*--------------------------------------------------------------*/
 html{
     scroll-behavior: smooth;
 }
@@ -15,17 +35,21 @@ html{
 
 /* nav */
 .header{
+    background-color: var(--Color-Prymari);
+   
     width: 100%;
-    position: absolute;
-    background-color: rgba(132, 43, 148,0.8);
+    
+    background-color: none;
     min-height: 70px;
     line-height: 70px;
     
 }
 .nav{
+
     display: flex;
     justify-content: space-between;
     margin: 0 80px;
+
 
 }
 .lista{
@@ -36,6 +60,7 @@ html{
     list-style: none;
     font-size: 21px;
     font-family: 'Koulen', cursive;
+    position: relative;
 }
 .lista li a{
     text-shadow: 1px 1px 1px #000;
@@ -50,13 +75,17 @@ html{
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--Color-Prymari);
 }
 .logo{
     font-size: 40px;
     font-family: 'Smooch', cursive;
     text-shadow: 2px 2px 2px rgba(0, 0, 0);
 }
+
+
+
+
 
 /* ------------------------- */
 
@@ -101,13 +130,13 @@ a{
 .btn:hover{
     color: #fff;
     transition: .3s;
-    background-color: #9c54a9;
+    background-color: var(--Color-Prymari);
     transform: scale(1.05, 1.05);
     box-shadow: 0px 0px 5px #fff;
 }
 
 #title{
-    color:  #bf1de0 ;
+    color:  var(--Color-Prymari) ;
     text-shadow: 2px 2px 3px #fff;
 }
 
@@ -118,20 +147,23 @@ a{
     margin-bottom: 30px;
     background-color: #fff;
     width: 90%;
-    height: auto;
+    height: 100%;
     margin: 0 auto;
     padding: auto;
     border-radius: 30px;
     box-shadow: 0 4px 3px rgba(0,0,0,0.3);
+    
 }
 
 .card{
     margin: 30px;
+    height: auto;
 }
 
 .text{
-   width: 50%;
-   float: right;
+   width: 100%;
+   padding: 20px;
+  
    
 }
 
@@ -140,6 +172,7 @@ a{
     font-size: 20px;
     font-family: 'Playfair Display', serif;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
 }
 /* texto de about me y skill etc */
 .text-content{
@@ -148,10 +181,29 @@ a{
     padding: 20px 15px;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    color: rgba(132, 43, 148, 0.803);
+    color: var(--Color-Prymari);
     text-align: center;
+
     margin-bottom: 25px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/*Aptitudes/habilidades*/
+
+.aptitudesHabiliades{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    
+
+}
+.aptitudesHabiliades li{
+
+}
+.aptitudes{
+    float: left;
 }
 
 .img-content{
@@ -168,7 +220,7 @@ a{
 
 .skills{
     margin-top: 30px;
-    background-color: #fff;
+    
     width: 90%;
     margin: 30px auto;
     box-shadow: 0 4px 3px rgba(0,0,0,0.4);
@@ -196,7 +248,8 @@ a{
 
 .elements a:hover{
     transition:  0.3s ;
-    transform: scale(1.05,1.05);
+    box-shadow: 0 3 2 rgba(0, 0, 0, 0.4);
+    transform: scale(0.9,0.9);
 }
 
 /* ----------------------- */
@@ -204,7 +257,7 @@ a{
 .skill1{
     width: 100px;
     margin: 0 45px;
-    
+  
 }
 
 /* card projects */
@@ -222,21 +275,17 @@ a{
 .project-card{
     
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.project-card{
-    padding: 30px 20px;
-
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 30px 10px;
 }
 
 .project-card img{
     object-fit: cover;
-    width: 200px;
     display: flex;
     border-radius: 10px;
     margin: 0 auto;
+   object-fit: center;
     margin-top: 20px;
     height: 200px;
 }
@@ -254,8 +303,34 @@ a{
 
 .project-card div:hover{
     transition:  all 0.3s ease  ;
-    transform: translatey(-3%);
+    transform: scale(1.01,1.01);
     box-shadow:  0px 6px 3px  rgba(0,0,0,0.4);
+
+}
+
+
+
+/*texthover letras sobre las imagenes de projects*/
+
+.text-hover{
+    padding: 80px 50px;
+    position: absolute;
+    color: #fff;
+    margin: 20px 150px;
+    font-size: 20px;
+    font-weight: bold;
+    opacity:0 ;
+    transition: all .3s;
+    text-align: center;
+    border-radius: 30px;
+    
+}
+
+
+.project-card div:hover .text-hover{
+   
+   opacity: 1;
+   transition: all .3s;
 }
 
 /* contact */
@@ -266,9 +341,10 @@ a{
     height: 60vh;
     color: #fff;
     border-radius:30px ;
-    background-color: rgba(132, 43, 148,1);
+    background-color: var(--Color-Prymari);
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 30px;
+
 }
 
 .content-contact {
@@ -277,7 +353,10 @@ a{
     padding: 30px 0;
     margin: 0 auto;
     justify-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    gap:  10px;
 }
 label{
     font-size: 20px;
@@ -294,12 +373,15 @@ h3{
 input{
     width: 400px;
     height: 40px;
+    font-size: 20px;
+    padding: 20px;
 }
 
 textarea{
-    width: 100%;
-    border-radius:5px ;
-    height: 100px;
+    font-size: 20px;
+    width: 200%;
+    border-radius:4px ;
+    height: 150px;
     resize: none;
 }
   
@@ -311,7 +393,7 @@ textarea{
     
 }
 
-.btn-form a{
+.btn-form{
     background-color: #fff;
     color: #000;
     padding: 10px 35px;
@@ -324,21 +406,29 @@ textarea{
 
 }
 
-.btn-form a:hover{
-    background-color: #a726c1;
+.btn-form:hover{
+    background-color:var(--Color-Prymari);
     border: solid 2px #fff;
     color: white;
     transition: all .3s;
+    font-size: 15px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+
 }
 
 
 
 .icons i{
     
-   margin-top: 30px;
+   
    font-size: 40px;
    padding: 0 15px;
    transition: 0.3s;
+   color: #fff;
 }
 
 .icons i:hover{
@@ -351,7 +441,7 @@ textarea{
 footer{
     margin-top: 50px;
     padding: 20px 100px;
-    background-color: #9c54a9;
+    background-color: var(--Color-Prymari);
     color: #fff;
     font-size: 18px;
     font-weight: bold;
